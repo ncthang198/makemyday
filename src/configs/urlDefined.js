@@ -1,5 +1,5 @@
-// export const baseURL = "http://localhost:1998/api/v1"
-export const baseURL = "http://172.16.4.127:1999/api/v1"
+export const baseURL = "http://103.130.212.136:2021/api/v1"
+// export const baseURL = "http://172.16.4.127:1999/api/v1"
 
 //Auth
 export const LOGIN = { name: "Login", url: '/user/signin' }

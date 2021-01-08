@@ -61,11 +61,9 @@ export function* watchLogout() {
 
 function* logout() {
     try {    
-        let result = yield api.logout();
-        console.log(result, "check")
+        let result = yield api.logout();        
         if (isSuccess(result.status)) {            
             if (result.data.isSuccess) {             
-
                 models.handleLogOut();
                 yield put(action.logoutSuccess(true))
                 showAlert(result.data.message)

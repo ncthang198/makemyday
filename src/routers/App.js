@@ -51,17 +51,18 @@ const App = () => {
 
   getFcmToken = async () => {
     let fcmToken = await models.getFCMToken()
-    // console.log(fcmToken, "checkkkk")
+    console.log(fcmToken, "fcmToken Local Storage")
     if (!fcmToken) {
       fcmToken = await messaging().getToken();
+      console.log("get fcmToken: ", fcmToken)
       if (fcmToken) {
         await models.setFCMToken(fcmToken);
       } else {
         console.log("Lấy FCM Token thất bại")
       }
     } else {
-      // console.log("==================Your Firebase Token is ok===================");
-      // console.log(fcmToken);
+      console.log("==================Your Firebase Token is ok===================");
+      console.log(fcmToken);
     }
   }
   createListenerMessage = async () => {

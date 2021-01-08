@@ -742,7 +742,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.thangdev.rnkit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.makemyday;
 				PRODUCT_NAME = rnkit;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -766,7 +766,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.thangdev.rnkit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.makemyday;
 				PRODUCT_NAME = rnkit;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -792,7 +792,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "\bcom.thangdev.rnkit-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "\bcom.makemyday-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -819,7 +819,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "\bcom.thangdev.rnkit-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "\bcom.makemyday-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -845,7 +845,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "\bcom.thangdev.rnkit-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "\bcom.makemyday-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rnkit-tvOS.app/rnkit-tvOS";
@@ -871,7 +871,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "\bcom.thangdev.rnkit-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "\bcom.makemyday-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rnkit-tvOS.app/rnkit-tvOS";

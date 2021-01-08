@@ -36,13 +36,13 @@ export default TabScreen = () => {
                     tabBarLabel: 'Home',
                 }}
             />
-            <Tab.Screen
+            {/* <Tab.Screen
                 name='QuoteList'
                 component={QuotesScreen}
                 options={() => ({
                     tabBarLabel: 'Danh sách quote',
                 })}
-            />
+            /> */}
         </Tab.Navigator>
     );
 };

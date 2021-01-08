@@ -10,6 +10,7 @@ import { login } from "../../actions";
 import AsyncStorage from "@react-native-async-storage/async-storage"
 import { commonsConfigs as configs } from '../../configs'
 import { models } from "../../models";
+import messaging from '@react-native-firebase/messaging';
 class Login extends Component {
   constructor(props) {
     super(props);
@@ -88,13 +89,15 @@ class Login extends Component {
       </SafeAreaView>
     );
   }
-  handleLogin = () => {
-    console.log(models.getFCMToken(), "chekkk")
+  handleLogin = async () => {
+    // let fcmToken = await models.getFCMToken()
+    let fcmToken = await messaging().getToken();
+    console.log(fcmToken, "fcmToken login")
     this.props.dispatchLogin({
       username: this.state.userName,
       password: this.state.password,
       device: configs.DEVICE_NAME._W,
-      fcmToken: models.getFCMToken() ? models.getFCMToken() : "empty"
+      fcmToken: fcmToken ? fcmToken : "empty"
     })
   }
   handleChangeInput = (name, value) => {

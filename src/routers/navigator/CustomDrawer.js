@@ -38,8 +38,7 @@ export default (props) => {
           }}>
             <TouchableOpacity
               onPress={() => {
-                dispatch(logout());                
-                console.log("hello")
+                dispatch(logout());                                
               }}
             >
               <Text>Logout</Text>

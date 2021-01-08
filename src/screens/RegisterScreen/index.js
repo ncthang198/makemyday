@@ -26,7 +26,7 @@ class Register extends Component {
       userId: null,
     }
   }
-static get
+
   render() {
     return (
       <View style={{ flex: 1 }}>
