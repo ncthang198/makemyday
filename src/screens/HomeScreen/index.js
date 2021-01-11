@@ -26,8 +26,7 @@ export default HomeScreen = ({ route, navigation }) => {
   const [quoteToday, setQuoteToday] = useState();
   const [refreshing, setRefreshing] = React.useState(false);
 
-  const onRefresh = React.useCallback(() => {
-    console.log("refes")
+  const onRefresh = React.useCallback(() => {    
     setRefreshing(true);
     setTimeout(() => {      
       getQuoteToday();
