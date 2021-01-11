@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useEffect } from "react/cjs/react.development";
+
 import {
     Alert,
     Modal,
@@ -12,13 +12,8 @@ import {
 } from "react-native";
 
 export default LoadingView = () => {
-    const loading = useSelector(state => state.commonReducer.loading)
-    const [modalVisible, setModalVisible] = useState(false);
-    useEffect(() => {        
-        return () => {
+    const loading = useSelector(state => state.commonReducer.loading)    
 
-        }
-    })
     return (
 
         <Modal
