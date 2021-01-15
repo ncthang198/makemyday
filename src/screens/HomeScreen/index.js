@@ -14,7 +14,7 @@ export default HomeScreen = ({ route, navigation }) => {
     return () => {
       // console.log("un mount")
     }
-  }, [])  
+  }, [])
   getQuoteToday = () => {
     fetch(urlDefined.baseURL + '/firebase/getMotivation')
       .then((response) => response.json())
@@ -29,6 +29,7 @@ export default HomeScreen = ({ route, navigation }) => {
     <SafeAreaView style={{ justifyContent: "center", alignItems: "center", flex: 1 }}>
       {isLoading ? <ActivityIndicator /> : (
         <Text
+          style={{ textAlign: "center", margin: 20 }}
           onPress={() => {
             navigation.openDrawer();
           }}
