@@ -1,3 +1,4 @@
+import { Colors } from "../../configs";
 export default {
   container: {
 
@@ -29,7 +30,11 @@ export default {
   button: {
     flexDirection: "column",
     justifyContent: 'center',
-    backgroundColor: '#FFA200',
+    backgroundColor: Colors.primary,
+
+    flexDirection: "column",
+    justifyContent: 'center',
+    // backgroundColor: '#FFA200',
     borderRadius: 30,
     height: 48,
     width: 110
@@ -69,14 +74,15 @@ export default {
 
   },
   input: {
-    height: 40, borderColor: 'gray', borderWidth: 1
+    height: 40, borderColor: 'gray', borderWidth: 1,
+    borderRadius: 5, marginTop: 5
   },
   textFooter: {
     color: "#162947",
     fontSize: 15,
   },
   textRegister: {
-    color: "#FFA200",
+    color: Colors.primary,
     fontSize: 15,
     fontWeight: "bold"
   }

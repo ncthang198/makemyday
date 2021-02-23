@@ -84,7 +84,6 @@ class Register extends Component {
                             </Text>
               </TouchableOpacity>
             </View>
-
           </View>
         </View>
         <View style={styles.footer}>

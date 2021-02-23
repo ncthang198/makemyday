@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styles from "./styles";
 import {
   Text, View, TouchableOpacity, Alert, KeyboardAvoidingView,
-  ActivityIndicator, TextInput,SafeAreaView
+  ActivityIndicator, TextInput, SafeAreaView
 } from "react-native";
 import { connect } from "react-redux"
 import { BaseScreen } from "../../components"
@@ -38,7 +38,7 @@ class Login extends Component {
             <View style={styles.coverInput}>
 
               <TextInput
-                style={{ height: 40, borderColor: 'gray', borderWidth: 1 }}
+                style={{ height: 40, borderColor: 'gray', borderWidth: 1, borderRadius: 5, marginTop: 5 }}
                 placeholder="Phone"
                 value={this.state.userName}
                 keyboardType={'numeric'}
@@ -48,7 +48,7 @@ class Login extends Component {
               />
 
               <TextInput
-                style={{ height: 40, borderColor: 'gray', borderWidth: 1 }}
+                style={{ height: 40, borderColor: 'gray', borderWidth: 1, borderRadius: 5, marginTop: 5 }}
                 secureTextEntry={true}
                 placeholder="Password"
                 value={this.state.password}
